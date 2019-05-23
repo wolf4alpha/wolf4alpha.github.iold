@@ -14,10 +14,12 @@
 	font-size: 15px;
 	color: #444
 }
+
 #home-footer .footer-links ul {
 	list-style-type: none;
 	padding-left: 0;
-	padding-top: 12px
+	padding-top: 12px;
+
 }
 #home-footer .footer-links ul li {
 	margin: 8px 0;
@@ -2960,7 +2962,7 @@ to {
 }
 .default-project .default-project-wrapper .description-wrapper {
 	display: block;
-	white-space: pre-wrap;
+	
 	padding: 20px 0
 }
 .default-project .default-project-wrapper .preview-wrapper img {
@@ -2969,8 +2971,8 @@ to {
 }
 .default-project .project-metadata-divider {
 	border-width: 6px;
-	margin: 24px 0!important;
-	width: 90px;
+	margin: 24px 0 0 0!important;
+	width: 390px;
 	border-radius: 3px
 }
 .default-project .project-background {
@@ -7077,4 +7079,63 @@ to {
 	border-radius: 4px;
 	margin: 10px 0 20px;
 	overflow: hidden
+}
+
+
+@media (min-width: 670px)
+.feature .title {
+    grid-column: span 1;
+    margin-bottom: 0;
+}
+@media (min-width: 420px)
+.feature .title {
+    grid-column: span 2;
+}
+.feature .title {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 420px)
+.feature .body:not(:last-child) {
+    margin-bottom: 0;
+}
+.feature .body:not(:last-child) {
+    margin-bottom: 20px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+@media (min-width: 670px)
+body {
+    --section-padding: 180px;
+}
+body {
+    --section-padding: 120px;
+}
+body {
+    background: #fff;
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 62.5%;
+    font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "pnum";
+    font-feature-settings: "pnum";
+    font-variant-numeric: proportional-nums;
 }

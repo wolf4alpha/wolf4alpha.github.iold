@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animierte Kreise</title>
+<style>
+
+
+
+    .dot{
+       transition: 1s;
+        display: block;
+        position: absolute;
+        width:50px;
+        height: 50px;
+        left:250px;
+        top:200px;
+        text-align: center;
+        vertical-align: center;
+
+
+    }
+    .dot50{
+        transition: 1s;
+        z-index: 5;
+        border-radius: 25px;
+        background-color:#7ad7f0;
+        left:250px;
+        top:200px;
+    }
+    .dot100{
+        transition: 1.5s;
+        z-index: 4;
+        border-radius: 50px;
+        background-color:#92dffe;
+    }
+    .dot150{
+        transition: 2s;
+        z-index: 3;
+        border-radius: 75px;
+        background-color:#b7e9f7;
+
+    }
+
+
+    .dot200{
+        transition: 2.5s;
+        z-index: 2;
+        border-radius: 100px;
+        border-color: darkslategrey;
+        background-color:#dbf3fa;
+
+
+    }
+
+    .dot50:hover ~.dot150   {
+        transform: scale(3);
+    }
+
+    .dot50:hover ~.dot100   {
+        transform: scale(2);
+    }
+
+    .dot50:hover ~.dot200   {
+        transform: scale(4);
+    }
+
+    .container{
+        width:500px;
+        height:500px;
+
+        margin:auto;
+        position: relative;
+
+    }
+
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+            <span class="dot dot50"> hover <br>me</span>
+            <span class="dot dot100"></span>
+            <span class="dot dot150"></span>
+            <span class="dot dot200"></span>
+
+</div>
+</body>
+</html>
